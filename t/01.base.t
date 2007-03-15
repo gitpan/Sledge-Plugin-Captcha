@@ -20,7 +20,7 @@ run {
 
     my $page = t::TestPages->new;
     $page->dispatch('foo');
-    like($page->output, qr{Content-Type: jpeg}, 'image output');
+    like($page->output, qr{Content-Type: image/jpeg}, 'image output');
     like($page->output, qr{JFIF}, 'image');
 };
 

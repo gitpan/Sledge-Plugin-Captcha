@@ -1,5 +1,9 @@
 Revision history for Sledge-Plugin-Captcha
 
+0.0.2  Thu Mar 15 10:52:08 JST 2007
+       oops. fixed invalid Content-Type header.
+       jpeg => image/jpeg.
+
 0.0.1  Fri Jan  5 10:46:27 2007
        Initial release.
 

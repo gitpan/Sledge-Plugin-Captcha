@@ -2,7 +2,7 @@ package Sledge::Plugin::Captcha;
 use strict;
 use warnings;
 use Carp;
-our $VERSION = 0.01;
+our $VERSION = 0.02;
 use GD::SecurityImage;
 
 sub import {
@@ -44,7 +44,7 @@ sub import {
         my ( $image, $mime_type, $captcha_string )
             = $captcha->out( %{ $self->create_config->captcha->{out} } );
         $self->session->param( $self->create_config->captcha->{session_name} => $captcha_string );
-        $self->show_image( $image => $mime_type );
+        $self->show_image( $image => "image/$mime_type" );
     };
 }
 

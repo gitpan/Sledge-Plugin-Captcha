@@ -11,4 +11,4 @@ no_index:
 requires: 
   GD::SecurityImage: 0
   Sledge::Plugin::ShowImage: 0
-version: 0.01
+version: 0.02
