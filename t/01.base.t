@@ -3,8 +3,8 @@ use warnings;
 use Test::Base;
 
 BEGIN {
-    eval q[use t::TestPages];
-    plan skip_all => "t::TestPages required for testing base: $@" if $@;
+    eval q[use Sledge::TestPages; use t::TestPages];
+    plan skip_all => "Sledge::TestPages, t::TestPages required for testing base: $@" if $@;
 };
 plan tests => 2*blocks;
 

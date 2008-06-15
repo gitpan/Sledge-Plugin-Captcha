@@ -1,5 +1,11 @@
 Revision history for Sledge-Plugin-Captcha
 
+0.03
+
+    - use Module::Install
+    - fixed test
+    - some tests moved to xt/
+
 0.0.2  Thu Mar 15 10:52:08 JST 2007
        oops. fixed invalid Content-Type header.
        jpeg => image/jpeg.
